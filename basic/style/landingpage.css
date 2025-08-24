@@ -1,0 +1,70 @@
+/* Global */
+* 
+body {
+    font-family: "Darker Grotesque", sans-serif;
+    background-color: rgb(26, 23, 23);
+    color: white;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 16px;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    padding: 16px;
+    border-bottom: 1px solid #333;
+}
+/* Logo Bahamud di Header */
+.logo {
+    font-size: 60px;
+}
+/* Profil Pict */
+.fotoku {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #0015ff;
+}
+/* Hero */
+.hero {
+    background: linear-gradient(145deg, #0a0a0a, #09122c);
+    text-align: center;
+    padding: 50px;
+}
+.hero h2 {
+    font-size: 50px;
+}
+/* Tentang Saya */
+
+/* Gap Tiap Heading 2 ke paragraf */
+.about h2, .projects h2, .contact h2 {
+    margin-bottom: 16px;
+    font-size: 40px;
+}
+.project-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    text-align: center;
+}
+.projectimg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;   
+}
+.fontsize {
+    font-size: 2rem;
+}
+/* Contact */
+.contact a {
+    color: #67c5ff;
+}
+/* Footer */
+footer {
+    background: linear-gradient(145deg, #0a0a0a, #09122c);
+    text-align: center;
+    padding: 20px;
+}

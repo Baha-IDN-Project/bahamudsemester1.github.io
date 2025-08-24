@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="./bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    
+<div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+  <div class="card text-center" style="width: 18rem; background: url('./img/darkfantasycavalry.jpeg') no-repeat center center/cover;">
+    <!-- Foto lingkaran -->
+    <img src="./img/Pasfoto.png" 
+         class="card-img-top rounded-circle mx-auto mt-3" 
+         alt="..." 
+         style="width: 150px; height: 150px; object-fit: cover;">
+
+    <div class="card-body" style="color: white;">
+      <h5 class="card-title">Software Engineer</h5>
+      <p class="card-text">
+        Hi, I'm Bahamud, student at IDN Polytechnic. I want to be a Game Developer.
+      </p>
+      <a href="#" class="btn btn-primary">More About Me</a>
+    </div>
+  </div>
+</div>
+
+<!-- Galeri Responsive -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Galeri Paperclip Challenge</h2>
+  <div class="row g-3">
+    <div class="col-12 col-md-4">
+      <img src="./img/paperclip1.jpg" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="./img/paperclip2.jpg" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-12 col-md-4">
+      <img src="./img/paperclip3.jpg" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -Hero -Bio -Modal ke WA -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Bahamud</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#biodata">Biodata</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#WaModal">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="bg-dark text-light text-center py-5">
+  <div class="container">
+    <img src="img/Pasfoto.png" class="img-fluid w-25 rounded-circle">
+    <h1 class="display-4">Halo, Saya <span class="text-info">Bahamud</span></h1>
+    <p class="lead">Seorang mahasiswa programmer yang suka belajar game development.</p>
+    <a href="#biodata" class="btn btn-info btn-lg mt-3">Lihat Biodata</a>
+  </div>
+</section>
+
+<!-- Biodata Section -->
+<section id="biodata" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Biodata</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Nama:</strong> Ahmad Bahaudin Mudhary</li>
+          <li class="list-group-item"><strong>Nickname:</strong> Bahamud</li>
+          <li class="list-group-item"><strong>Kampus:</strong> Politeknik IDN</li>
+          <li class="list-group-item"><strong>Hobi:</strong> Coding, Gaming, Membaca</li>
+        </ul>
+        <div class="text-center mt-3">
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#waModal">Hubungi via WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WhatsApp Modal -->
+<div class="modal fade" id="waModal" tabindex="-1" aria-labelledby="waModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="waModalLabel">Hubungi Saya di WhatsApp</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Tutup"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>Klik tombol untuk terhubung dengan saya via WhatsApp.</p>
+        <!-- Ganti 081296180743 dengan nomor WhatsApp tujuan -->
+        <a href="https://wa.me/6281296180743?text=Halo%20saya%20tertarik%20dengan%20profil%20Anda!" target="_blank" class="btn btn-success btn-lg">
+          <i class="bi bi-whatsapp"></i> Chat via WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+    <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  
+</html>

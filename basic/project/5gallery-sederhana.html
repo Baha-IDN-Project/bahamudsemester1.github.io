@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery Sederhana</title>
+    <style>
+
+      .section-gallery { padding: 40px 20px; background: #f7f7fb; }
+      .container { max-width: 1100px; margin-inline: auto; }
+      .title { text-align:center; margin: 0 0 24px; font-size: clamp(22px, 2.4vw, 32px); }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .card {
+        background: #fff;
+        border: 1px solid #e6e6ef;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .media { aspect-ratio: 16/10; overflow: hidden; }
+      .media img { width: 100%; height: 100%; object-fit: cover; }
+
+      .caption { padding: 12px 14px 16px; }
+      .caption h3 { margin: 0 0 6px; font-size: 18px; }
+      .caption p { margin: 0; font-size: 14px; line-height: 1.6; color:#4b4b57; }
+
+
+    </style>
+
+
+  </head>
+
+  <body>
+    <section class="section-gallery">
+      <div class="container">
+        <h1 class="title">Galeri Pixel Art</h1>
+
+        <div class="grid">
+          <!-- Kartu 1 -->
+          <figure class="card">
+            <div class="media">
+              <img src="/basic/img/pixel1.jpg" loading="lazy">
+            </div>
+            <figcaption class="caption">
+              <h3>Pixel Urban</h3>
+              <p>Pixel Art dengan gambar kota atau desa.</p>
+            </figcaption>
+          </figure>
+
+          <!-- Kartu 2 -->
+          <figure class="card">
+            <div class="media">
+              <img src="/basic/img/pixel2.jpg" loading="lazy">
+            </div>
+            <figcaption class="caption">
+              <h3>Pixel Karakter</h3>
+              <p>Pixel Art dengan gambar karakter.</p>
+            </figcaption>
+          </figure>
+
+          <!-- Kartu 3 -->
+          <figure class="card">
+            <div class="media">
+              <img src="/basic/img/pixel3.jpg"  loading="lazy">
+            </div>
+            <figcaption class="caption">
+              <h3>Pixel Nature</h3>
+              <p>Pixel Art dengan latar alam.</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

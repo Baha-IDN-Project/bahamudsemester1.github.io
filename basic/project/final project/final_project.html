@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahamud Portofolio</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+<!--Header-->
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Bahamud</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Hero-->
+    <section class="hero">
+        <div class="container">
+            <img src="/basic/img/fotoku.webp" class="fotoku" loading="lazy">
+            <h2>Hello, I'm a <span>Web Developer</span></h2>
+            <p>Exploring code in the shadows.</p>
+        </div>
+    </section>
+
+    <!--Tentang Saya-->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>Saya seorang mahasiswa yang berasal dari Politeknik IDN yang memiliki passion tentang dunia programming, terutama di bidang Web Development, App Development, dan Game Development.</p>
+        </div>
+    </section>
+
+    <!--Project-->
+    <section id="projects" class="projects">
+    <div class="container">
+      <h2>Galeri Project</h2>
+      <div>
+        <div class="project-card">
+          <img src="/basic/img/website.webp" class="projectimg" loading="lazy">
+          <p class="fontsize"><a href="pages/website.html">Website</a></p>
+        </div>
+        <div class="project-card">
+          <img src="/basic/img/aplikasi.webp" class="projectimg" loading="lazy">
+          <p class="fontsize"><a href="pages/aplikasi.html">Aplikasi</a></p>
+        </div>
+        <div class="project-card">
+          <img src="/basic/img/game.webp" class="projectimg" loading="lazy">
+          <p class="fontsize"><a href="pages/game.html">Game</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!--Contact Form-->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Kuy bikin project bareng. Silakan kontak saya di <a href="mailto:ahmadbahaudinmudhari@gmail.com">ahmadbahaudinmudhari@gmail.com</a></p>
+
+            <form action="#" method="post">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy;2025 Dibuat oleh Bahamud di kegelapan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

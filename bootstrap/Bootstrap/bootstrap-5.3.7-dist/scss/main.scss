@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-color: #7839F3;
+    --secondary-color: #ffc700;
+    --tetriary-color: #31B380;
+}
+
+.navbar{
+    height: 100px;
+    .container{
+        .navbar-brand{
+            img{
+                width: 186px;
+                height: 42px;
+            }
+        }
+        .navbar-collapse{
+            margin-left: 51px;
+            .navbar-nav{
+                .nav-item{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 100%;
+                    margin-right: 30px;
+                    .active{
+                        color: var(--primary-color);
+                    }
+                }:hover {
+                    color: var(--primary-color);
+                }
+                
+            }
+            .btn-auth{
+                .btn-outline-primary{
+                    border-radius: 47px;
+                    width: 120px;
+                    height: 45px;
+                    top: 28px;
+                    opacity: 1;
+                    background: #f5efff;
+                    border: 2px solid #ece3fe;
+                }
+                .btn-primary{
+                    border-radius: 47px;
+                    width: 130px;
+                    height: 45px;
+                    top: 28px;
+                    color: white;
+                    opacity: 1;
+                    background: var(--primary-color);
+                    border: 2px solid #ece3fe;
+                }
+            }
+        }
+    }
+}
+
+.learn-from-expert{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    .row{
+        .sisi-kiri{
+            span{
+                font-weight: 600;
+                color: #31B380;
+            }
+            h1{
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-weight: 600;
+                font-size: 42px;
+                color: #211B3D;
+                .dev{
+                    color: #7839F3;
+                }
+            }
+            p{
+                margin-bottom: 30px;
+                line-height: 30px;
+                font-weight: 400;
+                letter-spacing: 0%;
+                color: #5B5575;
+
+            }
+            .btn-primary{
+                border-radius: 47px;
+                width: 150px;
+                height: 45px;
+                top: 28px;
+                color: white;
+                opacity: 1;
+                background: var(--primary-color);
+                border: 2px solid var(--primary-color)
+            }
+        }
+        .sisi-kanan{
+            img{
+                width: 610px;
+                height: 459px;
+            }
+        }
+    }
+}
+
+.sponsor{
+    margin-bottom: 80px;
+}
