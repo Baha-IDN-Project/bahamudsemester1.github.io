@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahamud Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-gray-950 border-b border-gray-800 fixed top-0 w-full z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold text-purple-500">Bahamud</h1>
+      <nav>
+        <ul class="hidden md:flex gap-6">
+          <li><a href="#home" class="hover:text-purple-400">Home</a></li>
+          <li><a href="#about" class="hover:text-purple-400">About</a></li>
+          <li><a href="#projects" class="hover:text-purple-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-purple-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 min-h-screen flex items-center pt-20">
+    <div class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
+      <!-- Text -->
+      <div class="flex-1 text-center lg:text-left">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-4">Hi, I'm <span class="text-purple-500">Bahamud</span></h2>
+        <p class="text-gray-300 mb-6">Web Developer | App Developer | Game Developer</p>
+        <a href="#contact" class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg font-medium shadow-lg transition">
+          Contact Me
+        </a>
+      </div>
+      <!-- Image -->
+      <div class="flex-1 flex justify-center">
+        <img src="https://via.placeholder.com/400x350" alt="fotoku" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 px-6 bg-gray-800">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
+      <p class="text-gray-300">
+        Saya mahasiswa Politeknik IDN dengan passion besar di dunia pemrograman.  
+        Fokus saya pada Web Development, App Development, dan Game Development.  
+        Suka eksplorasi teknologi baru dan membangun solusi kreatif.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-20 px-6">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold text-center mb-10">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card -->
+        <div class="bg-[#1c1c1c] rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <img src="https://via.placeholder.com/400x200" alt="website" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Website Project</h3>
+            <p class="text-gray-300 mb-4">Responsive website dengan Tailwind CSS & JavaScript modern.</p>
+            <a href="#" class="text-purple-500 hover:underline">View Project →</a>
+          </div>
+        </div>
+
+        <div class="bg-[#1c1c1c] rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <img src="https://via.placeholder.com/400x200" alt="aplikasi" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Mobile App</h3>
+            <p class="text-gray-300 mb-4">Aplikasi Android sederhana dengan Flutter.</p>
+            <a href="#" class="text-purple-500 hover:underline">View Project →</a>
+          </div>
+        </div>
+
+        <div class="bg-[#1c1c1c] rounded-xl shadow-lg overflow-hidden hover:scale-105 transition">
+          <img src="https://via.placeholder.com/400x200" alt="game" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Game 2D</h3>
+            <p class="text-gray-300 mb-4">Game sederhana berbasis Unity 2D dengan mekanik dasar.</p>
+            <a href="#" class="text-purple-500 hover:underline">View Project →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-6 bg-gray-800">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact</h2>
+      <p class="text-gray-300 mb-6">Tertarik berkolaborasi? Silakan hubungi saya.</p>
+      
+      <form action="#" method="post" class="space-y-4">
+        <input type="text" placeholder="Name" class="w-full px-4 py-2 rounded-md bg-[#1c1c1c] border border-gray-700 focus:ring-2 focus:ring-purple-500">
+        <input type="email" placeholder="Email" class="w-full px-4 py-2 rounded-md bg-[#1c1c1c] border border-gray-700 focus:ring-2 focus:ring-purple-500">
+        <textarea placeholder="Message" rows="5" class="w-full px-4 py-2 rounded-md bg-[#1c1c1c] border border-gray-700 focus:ring-2 focus:ring-purple-500"></textarea>
+        <button type="submit" class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-lg transition">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-950 border-t border-gray-800 py-6 text-center text-sm text-gray-400">
+    <p>&copy; 2025 Bahamud. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

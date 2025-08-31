@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bahamud Portofolio</title>
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans leading-relaxed">
+
+  <!-- HEADER -->
+  <header class="bg-[#111] border-b border-[#333]">
+    <div class="container mx-auto max-w-5xl flex justify-between items-center py-4 px-4">
+      <h1 class="text-xl font-bold text-white">Bahamud</h1>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="#about" class="text-gray-400 hover:text-white hover:shadow-[0_0_5px_#9d00ff] transition">About</a></li>
+          <li><a href="#projects" class="text-gray-400 hover:text-white hover:shadow-[0_0_5px_#9d00ff] transition">Projects</a></li>
+          <li><a href="#contact" class="text-gray-400 hover:text-white hover:shadow-[0_0_5px_#9d00ff] transition">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-[#0a0a0a] to-[#09122c] text-center py-24">
+    <div class="container mx-auto max-w-5xl px-4">
+      <img src="/basic/img/fotoku.webp" alt="fotoku" class="w-48 h-48 mx-auto rounded-full object-cover border-2 border-blue-700 mb-6">
+      <h2 class="text-4xl font-bold">Hello, I'm a <span class="text-blue-400">Web Developer</span></h2>
+      <p class="mt-4 text-lg text-gray-300">Exploring code in the shadows.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 px-4">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-2xl font-semibold mb-4">Tentang Saya</h2>
+      <p class="text-gray-300">Saya seorang mahasiswa yang berasal dari Politeknik IDN yang memiliki passion tentang dunia programming, terutama di bidang Web Development, App Development, dan Game Development.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-16 px-4 bg-black">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-2xl font-semibold mb-6">Galeri Project</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        
+        <!-- Card -->
+        <div class="bg-[#1c1c1c] p-6 border border-[#333] text-center transform transition hover:-translate-y-2">
+          <img src="/basic/img/website.webp" alt="website" class="w-full max-w-xs mx-auto mb-4">
+          <p class="text-lg"><a href="pages/website.html" class="text-purple-500 hover:underline">Website</a></p>
+        </div>
+        
+        <div class="bg-[#1c1c1c] p-6 border border-[#333] text-center transform transition hover:-translate-y-2">
+          <img src="/basic/img/aplikasi.webp" alt="aplikasi" class="w-full max-w-xs mx-auto mb-4">
+          <p class="text-lg"><a href="pages/aplikasi.html" class="text-purple-500 hover:underline">Aplikasi</a></p>
+        </div>
+        
+        <div class="bg-[#1c1c1c] p-6 border border-[#333] text-center transform transition hover:-translate-y-2">
+          <img src="/basic/img/game.webp" alt="game" class="w-full max-w-xs mx-auto mb-4">
+          <p class="text-lg"><a href="pages/game.html" class="text-purple-500 hover:underline">Game</a></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 px-4">
+    <div class="container mx-auto max-w-5xl">
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+      <p class="mb-6 text-gray-300">Kuy bikin project bareng. Silakan kontak saya di <a href="mailto:ahmadbahaudinmudhari@gmail.com" class="text-purple-500 hover:underline">ahmadbahaudinmudhari@gmail.com</a></p>
+
+      <form action="#" method="post" class="space-y-4">
+        <div>
+          <label for="name" class="block mb-1">Name</label>
+          <input type="text" id="name" name="name" required class="w-full px-3 py-2 rounded-md bg-[#1c1c1c] border border-[#333] focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+        <div>
+          <label for="email" class="block mb-1">Email</label>
+          <input type="email" id="email" name="email" required class="w-full px-3 py-2 rounded-md bg-[#1c1c1c] border border-[#333] focus:outline-none focus:ring-2 focus:ring-purple-500">
+        </div>
+        <div>
+          <label for="message" class="block mb-1">Message</label>
+          <textarea id="message" name="message" rows="5" required class="w-full px-3 py-2 rounded-md bg-[#1c1c1c] border border-[#333] focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+        </div>
+        <button type="submit" class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-lg transition">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#111] border-t border-[#333] text-center py-6 text-sm text-gray-400">
+    <p>&copy;2025 Dibuat oleh Bahamud di kegelapan. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

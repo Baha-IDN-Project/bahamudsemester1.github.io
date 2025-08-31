@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Cards Grid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+
+  <div class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center mb-10">Latest Blog</h2>
+
+    <!-- Grid Blog -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <div class="bg-[#1c1c1c] rounded-xl shadow-lg overflow-hidden hover:shadow-purple-500/30 transition">
+        <img src="https://via.placeholder.com/400x200" alt="blog 1" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Belajar Tailwind CSS</h3>
+          <p class="text-gray-300 mb-4">Panduan dasar membangun website modern dengan Tailwind CSS yang simple dan powerful.</p>
+          <a href="#" class="inline-block text-purple-500 hover:text-purple-400 font-medium">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#1c1c1c] rounded-xl shadow-lg overflow-hidden hover:shadow-purple-500/30 transition">
+        <img src="https://via.placeholder.com/400x200" alt="blog 2" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Tips Jadi Web Developer</h3>
+          <p class="text-gray-300 mb-4">Beberapa langkah penting untuk memulai karir sebagai Web Developer di era digital.</p>
+          <a href="#" class="inline-block text-purple-500 hover:text-purple-400 font-medium">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#1c1c1c] rounded-xl shadow-lg overflow-hidden hover:shadow-purple-500/30 transition">
+        <img src="https://via.placeholder.com/400x200" alt="blog 3" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-semibold mb-2">Membangun Project Portfolio</h3>
+          <p class="text-gray-300 mb-4">Kenapa portfolio penting untuk developer? Dan bagaimana cara membuatnya menarik?</p>
+          <a href="#" class="inline-block text-purple-500 hover:text-purple-400 font-medium">Read More →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
